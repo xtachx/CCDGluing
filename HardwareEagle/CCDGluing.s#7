@@ -3131,16 +3131,17 @@ This footprint was designed to help hold the alignment of a through-hole compone
 <pinref part="J1" gate="G$1" pin="2"/>
 <wire x1="-15.24" y1="10.16" x2="-7.62" y2="10.16" width="0.1524" layer="91"/>
 <wire x1="-7.62" y1="-38.1" x2="-7.62" y2="10.16" width="0.1524" layer="91"/>
-<wire x1="-7.62" y1="66.04" x2="-7.62" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="-7.62" y1="66.04" x2="-7.62" y2="63.5" width="0.1524" layer="91"/>
 <junction x="-7.62" y="10.16"/>
 <pinref part="J2" gate="G$1" pin="2"/>
-<wire x1="-7.62" y1="-38.1" x2="157.48" y2="-38.1" width="0.1524" layer="91"/>
 <pinref part="J1" gate="G$1" pin="3"/>
+<wire x1="-7.62" y1="-38.1" x2="157.48" y2="-38.1" width="0.1524" layer="91"/>
 <wire x1="-15.24" y1="12.7" x2="-15.24" y2="10.16" width="0.1524" layer="91"/>
 <junction x="-15.24" y="10.16"/>
-<pinref part="ARDUINO_DUE1" gate="G$1" pin="GND@1"/>
-<wire x1="10.16" y1="63.5" x2="-7.62" y2="63.5" width="0.1524" layer="91"/>
 <wire x1="-7.62" y1="63.5" x2="-7.62" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="10.16" y1="63.5" x2="-7.62" y2="63.5" width="0.1524" layer="91"/>
+<junction x="-7.62" y="63.5"/>
+<pinref part="ARDUINO_DUE1" gate="G$1" pin="GND@1"/>
 </segment>
 </net>
 <net name="N$9" class="0">

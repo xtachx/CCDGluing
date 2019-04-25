@@ -1716,7 +1716,7 @@ design rules under a new name.</description>
 <signal name="LOAD2">
 <contactref element="J1" pad="1"/>
 <contactref element="ARDUINO_DUE1" pad="VIN"/>
-<wire x1="49.79" y1="34.96" x2="57.0386" y2="27.7114" width="0.2032" layer="16"/>
+<wire x1="49.79" y1="34.96" x2="57.0386" y2="27.7114" width="0.2032" layer="1"/>
 <wire x1="76.0476" y1="27.7114" x2="78.613" y2="25.146" width="0.2032" layer="16"/>
 <wire x1="57.0386" y1="27.7114" x2="76.0476" y2="27.7114" width="0.2032" layer="16"/>
 <contactref element="K1" pad="1LD"/>
@@ -1727,7 +1727,7 @@ design rules under a new name.</description>
 <wire x1="61.1124" y1="57.0992" x2="52.8066" y2="48.4632" width="1.016" layer="1"/>
 <wire x1="52.8066" y1="48.4632" x2="49.784" y2="45.2374" width="1.016" layer="1"/>
 <wire x1="49.784" y1="45.2374" x2="49.79" y2="34.96" width="1.016" layer="1"/>
-<wire x1="49.79" y1="34.96" x2="49.79" y2="34.96" width="0" layer="19" extent="1-16"/>
+<via x="57.0386" y="27.7114" extent="1-16" drill="0.35"/>
 </signal>
 <signal name="N$5">
 <contactref element="ARDUINO_DUE1" pad="2"/>
@@ -1768,11 +1768,12 @@ design rules under a new name.</description>
 <wire x1="41.04" y1="42.0854" x2="41.04" y2="42.06" width="1.016" layer="1"/>
 <wire x1="41.04" y1="42.0854" x2="37.2872" y2="45.8382" width="1.016" layer="1"/>
 <contactref element="ARDUINO_DUE1" pad="GND_1"/>
-<wire x1="74.2442" y1="26.9748" x2="76.073" y2="25.146" width="0.2032" layer="16"/>
+<wire x1="74.3204" y1="26.8986" x2="76.073" y2="25.146" width="0.2032" layer="16"/>
 <wire x1="41.04" y1="42.06" x2="41.04" y2="29.06" width="0.2032" layer="1"/>
-<wire x1="41.04" y1="29.06" x2="50.94" y2="29.06" width="0.2032" layer="16"/>
-<wire x1="50.94" y1="29.06" x2="53.0252" y2="26.9748" width="0.2032" layer="16"/>
-<wire x1="53.0252" y1="26.9748" x2="74.2442" y2="26.9748" width="0.2032" layer="16"/>
+<wire x1="41.04" y1="29.06" x2="52.0576" y2="29.06" width="0.2032" layer="1"/>
+<wire x1="54.219" y1="26.8986" x2="54.346" y2="26.8986" width="0.2032" layer="1"/>
+<wire x1="54.219" y1="26.8986" x2="52.0576" y2="29.06" width="0.2032" layer="1"/>
+<wire x1="54.346" y1="26.8986" x2="74.3204" y2="26.8986" width="0.2032" layer="16"/>
 <contactref element="LOADOUT" pad="3"/>
 <contactref element="LOADOUT" pad="2"/>
 <wire x1="42.9758" y1="72.753" x2="44.34259375" y2="72.753" width="1.016" layer="1"/>
@@ -1786,7 +1787,7 @@ design rules under a new name.</description>
 <wire x1="49.4792" y1="49.7586" x2="46.378515625" y2="46.657915625" width="1.016" layer="1"/>
 <wire x1="46.378515625" y1="46.657915625" x2="37.2872" y2="46.8004" width="1.016" layer="1"/>
 <wire x1="38.4758" y1="72.753" x2="42.9758" y2="72.753" width="1.016" layer="1"/>
-<wire x1="41.04" y1="29.06" x2="41.04" y2="29.06" width="0" layer="19" extent="1-16"/>
+<via x="54.346" y="26.8986" extent="1-16" drill="0.35"/>
 </signal>
 <signal name="N$9">
 <contactref element="R1" pad="2"/>
@@ -1796,7 +1797,7 @@ design rules under a new name.</description>
 <contactref element="X1" pad="5"/>
 <contactref element="ARDUINO_DUE1" pad="A0"/>
 <wire x1="37.2872" y1="48.5004" x2="37.2872" y2="53.1114" width="0.2032" layer="1"/>
-<wire x1="37.2872" y1="53.1114" x2="37.3789" y2="53.2031" width="0.1524" layer="1"/>
+<wire x1="37.2872" y1="53.1114" x2="37.3789" y2="53.2031" width="0.2032" layer="1"/>
 <wire x1="37.3789" y1="58.3029" x2="42.4787" y2="58.3029" width="0.2032" layer="1"/>
 <wire x1="42.4787" y1="58.3029" x2="42.4787" y2="53.2031" width="0.2032" layer="1"/>
 <wire x1="42.4787" y1="46.357296875" x2="42.4787" y2="53.2031" width="0.2032" layer="16"/>
@@ -1833,7 +1834,7 @@ design rules under a new name.</description>
 <signal name="D/C">
 <contactref element="LCDCONN" pad="7"/>
 <contactref element="ARDUINO_DUE1" pad="12"/>
-<wire x1="64.7704" y1="50.8" x2="64.77" y2="50.8" width="0.1524" layer="16"/>
+<wire x1="64.7704" y1="50.8" x2="64.77" y2="50.8" width="0.2032" layer="16"/>
 <wire x1="64.389" y1="73.406" x2="68.17501875" y2="69.61998125" width="0.2032" layer="16"/>
 <wire x1="68.17501875" y1="69.61998125" x2="68.230028125" y2="54.794821875" width="0.2032" layer="16"/>
 <wire x1="68.230028125" y1="54.794821875" x2="68.222028125" y2="54.78725" width="0.2032" layer="16"/>
@@ -1887,11 +1888,35 @@ design rules under a new name.</description>
 <mfgpreviewcolor name="substratecolor" color="0xFF786E46"/>
 </mfgpreviewcolors>
 <errors>
-<approved hash="21,19,56fd54812a86d683"/>
-<approved hash="21,19,fefcfcfefcfefefc"/>
 <approved hash="2,20,b0511bac61a93b11"/>
 <approved hash="2,20,4ad01de023ff0423"/>
 <approved hash="2,20,f1cbf6f96ee7733b"/>
+<approved hash="5,1,2851eac283e50047"/>
+<approved hash="5,1,66de065f41ca568c"/>
+<approved hash="5,1,0ad06b8c73aad3c7"/>
+<approved hash="5,1,29d1ec9604318047"/>
+<approved hash="5,1,6158080bcc80d68c"/>
+<approved hash="5,1,0aa06183f9c553d7"/>
+<approved hash="5,1,29a1e6998e5e0057"/>
+<approved hash="5,1,0a807f776731d3f7"/>
+<approved hash="5,1,601a15b2d265d68c"/>
+<approved hash="5,1,611813c64a93568c"/>
+<approved hash="5,1,2981f86d10aa8077"/>
+<approved hash="5,1,45f267e82cb26d58"/>
+<approved hash="5,1,38881fb937459055"/>
+<approved hash="5,16,45f267e82cb26d58"/>
+<approved hash="5,16,38881fb937459055"/>
+<approved hash="5,16,2851eac283e50047"/>
+<approved hash="5,16,66de065f41ca568c"/>
+<approved hash="5,16,0ad06b8c73aad3c7"/>
+<approved hash="5,16,29d1ec9604318047"/>
+<approved hash="5,16,6158080bcc80d68c"/>
+<approved hash="5,16,0aa06183f9c553d7"/>
+<approved hash="5,16,29a1e6998e5e0057"/>
+<approved hash="5,16,0a807f776731d3f7"/>
+<approved hash="5,16,601a15b2d265d68c"/>
+<approved hash="5,16,611813c64a93568c"/>
+<approved hash="5,16,2981f86d10aa8077"/>
 </errors>
 </board>
 </drawing>

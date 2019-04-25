@@ -1757,8 +1757,6 @@ design rules under a new name.</description>
 </signal>
 <signal name="LOAD1">
 <contactref element="J2" pad="1"/>
-<contactref element="J2" pad="3"/>
-<wire x1="42.29" y1="71.12" x2="42.29" y2="73.12" width="1.016" layer="1"/>
 <wire x1="62.271553125" y1="64.09185625" x2="80.391" y2="64.135" width="1.016" layer="1"/>
 <wire x1="62.271553125" y1="64.09185625" x2="58.728521875" y2="61.22728125" width="1.016" layer="1"/>
 <wire x1="58.728521875" y1="61.22728125" x2="58.7982375" y2="57.67178125" width="1.016" layer="1"/>
@@ -1789,6 +1787,8 @@ design rules under a new name.</description>
 <wire x1="44.1198" y1="69.0372" x2="46.8622625" y2="66.405321875" width="1.016" layer="1"/>
 <wire x1="44.1198" y1="69.0372" x2="42.29" y2="69.12" width="1.016" layer="1"/>
 <wire x1="46.8622625" y1="66.405321875" x2="46.888278125" y2="49.95" width="1.016" layer="1"/>
+<contactref element="J2" pad="3"/>
+<wire x1="42.29" y1="69.12" x2="42.29" y2="73.12" width="0" layer="19" extent="1-1"/>
 <wire x1="41.04" y1="29.06" x2="41.04" y2="29.06" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="N$9">

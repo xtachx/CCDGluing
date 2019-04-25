@@ -3157,15 +3157,6 @@ This footprint was designed to help hold the alignment of a through-hole compone
 <junction x="-7.62" y="78.74"/>
 </segment>
 </net>
-<net name="GND" class="0">
-<segment>
-<pinref part="LCDCONN" gate="G$1" pin="10"/>
-<pinref part="ARDUINO_DUE1" gate="G$1" pin="GND@5"/>
-<wire x1="83.82" y1="127" x2="109.22" y2="127" width="0.1524" layer="91"/>
-<wire x1="109.22" y1="127" x2="109.22" y2="104.14" width="0.1524" layer="91"/>
-<label x="111.76" y="106.68" size="1.778" layer="95" rot="R90"/>
-</segment>
-</net>
 <net name="CLK" class="0">
 <segment>
 <pinref part="LCDCONN" gate="G$1" pin="3"/>
@@ -3250,6 +3241,14 @@ This footprint was designed to help hold the alignment of a through-hole compone
 <wire x1="86.36" y1="106.68" x2="86.36" y2="121.92" width="0.1524" layer="91"/>
 <wire x1="86.36" y1="121.92" x2="81.28" y2="121.92" width="0.1524" layer="91"/>
 <label x="81.28" y="121.92" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="LCDCONN" gate="G$1" pin="10"/>
+<pinref part="ARDUINO_DUE1" gate="G$1" pin="GND_ICSP1"/>
+<wire x1="83.82" y1="127" x2="88.9" y2="127" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="127" x2="88.9" y2="104.14" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

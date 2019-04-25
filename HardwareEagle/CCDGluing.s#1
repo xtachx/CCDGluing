@@ -1892,7 +1892,7 @@ Created 2014-10-08, Karrer Zheng&lt;br&gt;
 <pad name="2LD" x="-3.81" y="0" drill="1.57"/>
 <pad name="3CTR-" x="3.81" y="0" drill="1.57"/>
 <pad name="4CTR+" x="7.62" y="0" drill="1.57"/>
-<rectangle x1="-8.6" y1="6.294" x2="8.6" y2="26.294" layer="17"/>
+<rectangle x1="-8.6" y1="6.294" x2="8.6" y2="26.294" layer="1"/>
 <circle x="-8.06" y="6.88" radius="0.318275" width="0.127" layer="21"/>
 <wire x1="-10" y1="30" x2="-10" y2="-2" width="0.127" layer="51"/>
 <wire x1="-10" y1="-2" x2="10" y2="-2" width="0.127" layer="51"/>
