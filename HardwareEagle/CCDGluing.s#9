@@ -3036,9 +3036,9 @@ This footprint was designed to help hold the alignment of a through-hole compone
 <attribute name="NAME" x="15.24" y="101.6" size="1.27" layer="94"/>
 <attribute name="VALUE" x="12.7" y="-12.7" size="1.27" layer="94"/>
 </instance>
-<instance part="R1" gate="G$1" x="-7.62" y="48.26" smashed="yes" rot="R90">
-<attribute name="NAME" x="-9.144" y="48.26" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
-<attribute name="VALUE" x="-6.096" y="48.26" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
+<instance part="R1" gate="G$1" x="-7.62" y="71.12" smashed="yes" rot="R90">
+<attribute name="NAME" x="-9.144" y="71.12" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="-6.096" y="71.12" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
 </instance>
 <instance part="J1" gate="G$1" x="-15.24" y="15.24" smashed="yes">
 <attribute name="NAME" x="-25.4" y="17.78" size="1.778" layer="95"/>
@@ -3049,9 +3049,9 @@ This footprint was designed to help hold the alignment of a through-hole compone
 <attribute name="NAME" x="167.64" y="-45.72" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="167.64" y="-35.56" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="X1" gate="G1" x="-10.16" y="66.04" smashed="yes">
-<attribute name="VALUE" x="-12.7" y="60.96" size="1.778" layer="96"/>
-<attribute name="NAME" x="-12.7" y="69.342" size="1.778" layer="95"/>
+<instance part="X1" gate="G1" x="-10.16" y="91.44" smashed="yes">
+<attribute name="VALUE" x="-12.7" y="86.36" size="1.778" layer="96"/>
+<attribute name="NAME" x="-12.7" y="94.742" size="1.778" layer="95"/>
 </instance>
 <instance part="LCDCONN" gate="G$1" x="78.74" y="137.16" smashed="yes" rot="R270">
 <attribute name="VALUE" x="56.134" y="137.16" size="1.778" layer="96" font="vector" rot="R270"/>
@@ -3064,15 +3064,17 @@ This footprint was designed to help hold the alignment of a through-hole compone
 <net name="3.3V" class="0">
 <segment>
 <pinref part="X1" gate="G1" pin="1"/>
-<wire x1="-7.62" y1="66.04" x2="-2.54" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="-2.54" y1="66.04" x2="-2.54" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="-2.54" y1="71.12" x2="10.16" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="-7.62" y1="91.44" x2="-2.54" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="-2.54" y1="91.44" x2="-2.54" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="-2.54" y1="96.52" x2="5.08" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="5.08" y1="96.52" x2="5.08" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="5.08" y1="71.12" x2="10.16" y2="71.12" width="0.1524" layer="91"/>
 <pinref part="ARDUINO_DUE1" gate="G$1" pin="3V3"/>
 <pinref part="LCDCONN" gate="G$1" pin="1"/>
 <wire x1="60.96" y1="127" x2="60.96" y2="111.76" width="0.1524" layer="91"/>
 <wire x1="60.96" y1="111.76" x2="-2.54" y2="111.76" width="0.1524" layer="91"/>
-<wire x1="-2.54" y1="111.76" x2="-2.54" y2="71.12" width="0.1524" layer="91"/>
-<junction x="-2.54" y="71.12"/>
+<wire x1="-2.54" y1="111.76" x2="-2.54" y2="96.52" width="0.1524" layer="91"/>
+<junction x="-2.54" y="96.52"/>
 <label x="22.86" y="111.76" size="1.778" layer="95"/>
 </segment>
 </net>
@@ -3128,29 +3130,30 @@ This footprint was designed to help hold the alignment of a through-hole compone
 <pinref part="R1" gate="G$1" pin="1"/>
 <pinref part="J1" gate="G$1" pin="2"/>
 <wire x1="-15.24" y1="10.16" x2="-7.62" y2="10.16" width="0.1524" layer="91"/>
-<wire x1="22.86" y1="-38.1" x2="-7.62" y2="-38.1" width="0.1524" layer="91"/>
 <wire x1="-7.62" y1="-38.1" x2="-7.62" y2="10.16" width="0.1524" layer="91"/>
-<wire x1="-7.62" y1="43.18" x2="-7.62" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="-7.62" y1="66.04" x2="-7.62" y2="10.16" width="0.1524" layer="91"/>
 <junction x="-7.62" y="10.16"/>
-<pinref part="ARDUINO_DUE1" gate="G$1" pin="GND@2"/>
-<wire x1="22.86" y1="-15.24" x2="22.86" y2="-38.1" width="0.1524" layer="91"/>
 <pinref part="J2" gate="G$1" pin="2"/>
-<wire x1="22.86" y1="-38.1" x2="157.48" y2="-38.1" width="0.1524" layer="91"/>
-<junction x="22.86" y="-38.1"/>
+<wire x1="-7.62" y1="-38.1" x2="157.48" y2="-38.1" width="0.1524" layer="91"/>
 <pinref part="J1" gate="G$1" pin="3"/>
 <wire x1="-15.24" y1="12.7" x2="-15.24" y2="10.16" width="0.1524" layer="91"/>
 <junction x="-15.24" y="10.16"/>
+<pinref part="ARDUINO_DUE1" gate="G$1" pin="GND@1"/>
+<wire x1="10.16" y1="63.5" x2="-7.62" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="-7.62" y1="63.5" x2="-7.62" y2="10.16" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$9" class="0">
 <segment>
 <pinref part="R1" gate="G$1" pin="2"/>
 <pinref part="X1" gate="G1" pin="2"/>
-<wire x1="-7.62" y1="53.34" x2="-7.62" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="-7.62" y1="76.2" x2="-7.62" y2="78.74" width="0.1524" layer="91"/>
 <pinref part="ARDUINO_DUE1" gate="G$1" pin="AN0"/>
-<wire x1="-7.62" y1="55.88" x2="-7.62" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="10.16" y1="55.88" x2="-7.62" y2="55.88" width="0.1524" layer="91"/>
-<junction x="-7.62" y="55.88"/>
+<wire x1="-7.62" y1="78.74" x2="-7.62" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="10.16" y1="55.88" x2="0" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="0" y1="55.88" x2="0" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="0" y1="78.74" x2="-7.62" y2="78.74" width="0.1524" layer="91"/>
+<junction x="-7.62" y="78.74"/>
 </segment>
 </net>
 <net name="GND" class="0">

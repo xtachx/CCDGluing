@@ -3118,9 +3118,6 @@ This footprint was designed to help hold the alignment of a through-hole compone
 <wire x1="144.78" y1="2.54" x2="144.78" y2="-43.18" width="0.1524" layer="91"/>
 <wire x1="144.78" y1="-43.18" x2="157.48" y2="-43.18" width="0.1524" layer="91"/>
 <label x="144.78" y="-30.48" size="1.778" layer="95"/>
-<pinref part="J2" gate="G$1" pin="3"/>
-<wire x1="157.48" y1="-40.64" x2="157.48" y2="-43.18" width="0.1524" layer="91"/>
-<junction x="157.48" y="-43.18"/>
 <pinref part="K1" gate="G$1" pin="2LD"/>
 <wire x1="144.78" y1="2.54" x2="149.86" y2="2.54" width="0.1524" layer="91"/>
 </segment>
@@ -3142,6 +3139,9 @@ This footprint was designed to help hold the alignment of a through-hole compone
 <wire x1="10.16" y1="63.5" x2="-7.62" y2="63.5" width="0.1524" layer="91"/>
 <junction x="-7.62" y="63.5"/>
 <pinref part="ARDUINO_DUE1" gate="G$1" pin="GND@1"/>
+<pinref part="J2" gate="G$1" pin="3"/>
+<wire x1="157.48" y1="-40.64" x2="157.48" y2="-38.1" width="0.1524" layer="91"/>
+<junction x="157.48" y="-38.1"/>
 </segment>
 </net>
 <net name="N$9" class="0">

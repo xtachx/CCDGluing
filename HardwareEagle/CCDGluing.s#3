@@ -1754,42 +1754,34 @@ WR-DC_DC Power Jack_Right Angled_SMT Center Pin Ø2.0_Plug ID Ø2.05_Plug OD Ø5
 <vertex x="-0.25" y="-8.75"/>
 </polygon>
 </package>
-<package name="69410X304002" urn="urn:adsk.eagle:footprint:3359587/1" library_version="2">
-<description>&lt;b&gt;694102304002&lt;/b&gt;&lt;p&gt;
-WR-DC_DC Power Jack_Right Angled_THT Center Pin Ø1.0_Plug ID Ø1.05_Plug OD Ø3.5_with Peg</description>
-<wire x1="9" y1="-3.15" x2="9" y2="-2.5" width="0.127" layer="21"/>
-<wire x1="0" y1="-3.15" x2="9" y2="-3.15" width="0.127" layer="21"/>
-<wire x1="0" y1="3.15" x2="9" y2="3.15" width="0.127" layer="21"/>
-<wire x1="9" y1="2.5" x2="9" y2="3.15" width="0.127" layer="21"/>
-<wire x1="0" y1="-3.15" x2="0" y2="3.15" width="0.127" layer="21"/>
-<wire x1="7.4" y1="2.25" x2="8.6" y2="2.25" width="0.1" layer="46"/>
-<wire x1="8.6" y1="1.75" x2="7.4" y2="1.75" width="0.1" layer="46"/>
-<wire x1="7.4" y1="0.25" x2="8.6" y2="0.25" width="0.1" layer="46"/>
-<wire x1="8.6" y1="-0.25" x2="7.4" y2="-0.25" width="0.1" layer="46"/>
-<wire x1="7.4" y1="-1.75" x2="8.6" y2="-1.75" width="0.1" layer="46"/>
-<wire x1="8.6" y1="-2.25" x2="7.4" y2="-2.25" width="0.1" layer="46"/>
-<wire x1="7.4" y1="2.25" x2="7.4" y2="1.75" width="0.1" layer="46"/>
-<wire x1="7.4" y1="0.25" x2="7.4" y2="-0.25" width="0.1" layer="46"/>
-<wire x1="8.6" y1="0.25" x2="8.6" y2="-0.25" width="0.1" layer="46"/>
-<wire x1="8.6" y1="2.25" x2="8.6" y2="1.75" width="0.1" layer="46"/>
-<wire x1="7.4" y1="-1.75" x2="7.4" y2="-2.25" width="0.1" layer="46"/>
-<wire x1="8.6" y1="-1.75" x2="8.6" y2="-2.25" width="0.1" layer="46"/>
-<pad name="3" x="8" y="2" drill="0.5" diameter="0.85" shape="long"/>
-<pad name="1" x="8" y="0" drill="0.5" diameter="0.85" shape="long"/>
-<pad name="2" x="8" y="-2" drill="0.5" diameter="0.85" shape="long"/>
-<text x="2.01" y="4.344" size="1.27" layer="25" font="vector" ratio="13" rot="SR0">&gt;NAME</text>
-<text x="1.51" y="-5.22" size="1.27" layer="27" font="vector" ratio="13" rot="SR0">&gt;VALUE</text>
-<text x="0.9" y="-2.105" size="0.6096" layer="51" rot="R90">PCB Edge</text>
-<text x="6.22" y="1.55" size="0.8128" layer="21">3</text>
-<text x="6.32" y="-0.45" size="0.8128" layer="21">1</text>
-<text x="6.32" y="-2.55" size="0.8128" layer="21">2</text>
-<hole x="2" y="2" drill="1.3"/>
-<hole x="2" y="-2" drill="1.3"/>
+<package name="69410X107102" urn="urn:adsk.eagle:footprint:3359589/1" library_version="2">
+<description>&lt;b&gt;694102107102&lt;/b&gt;&lt;p&gt;
+WR-DC_DC Power Jack_Right Angled_SMT Center Pin Ø1.0_Plug ID Ø1.05_Plug OD Ø3.5_with 4 Soldering Pad &amp; Peg</description>
+<smd name="3" x="-4.3" y="8" dx="2.2" dy="2.2" layer="1" rot="R180"/>
+<smd name="2" x="-4.3" y="3.5" dx="2.2" dy="2.2" layer="1" rot="R180"/>
+<smd name="A1" x="4.3" y="3.5" dx="2.2" dy="2.2" layer="1" rot="R180"/>
+<smd name="1" x="4.3" y="8" dx="2.2" dy="2.2" layer="1" rot="R180"/>
+<text x="-3.6516" y="10.524359375" size="1.6764" layer="25" font="vector" ratio="13" rot="SR0">&gt;NAME</text>
+<text x="-4.3016" y="-2.499640625" size="1.6764" layer="27" font="vector" ratio="13" rot="SR0">&gt;VALUE</text>
+<text x="2.08" y="2.81" size="1.27" layer="21">1</text>
+<text x="2.02" y="7.27" size="1.27" layer="21">1</text>
+<text x="-2.64" y="7.34" size="1.27" layer="21">3</text>
+<text x="-2.53" y="2.93" size="1.27" layer="21">2</text>
+<hole x="0" y="1.5" drill="1"/>
+<hole x="0" y="6.5" drill="1"/>
+<wire x1="4" y1="0" x2="-4" y2="0" width="0.127" layer="21"/>
+<wire x1="-4" y1="0" x2="-4" y2="9.3" width="0.127" layer="51"/>
+<wire x1="-4" y1="9.3" x2="4" y2="9.3" width="0.127" layer="21"/>
+<wire x1="4" y1="9.3" x2="4" y2="0" width="0.127" layer="51"/>
+<wire x1="4" y1="2.2" x2="4" y2="0" width="0.127" layer="21"/>
+<wire x1="-4" y1="2.2" x2="-4" y2="0" width="0.127" layer="21"/>
+<wire x1="4" y1="4.8" x2="4" y2="6.7" width="0.127" layer="21"/>
+<wire x1="-4" y1="4.8" x2="-4" y2="6.7" width="0.127" layer="21"/>
 <polygon width="0.127" layer="39">
-<vertex x="-0.25" y="3.4"/>
-<vertex x="9.25" y="3.4"/>
-<vertex x="9.25" y="-3.4"/>
-<vertex x="-0.25" y="-3.4"/>
+<vertex x="-5.75" y="-0.25"/>
+<vertex x="-5.75" y="9.55"/>
+<vertex x="5.75" y="9.55"/>
+<vertex x="5.75" y="-0.25"/>
 </polygon>
 </package>
 </packages>
@@ -1801,11 +1793,11 @@ WR-DC_DC Power Jack_Right Angled_SMT Center Pin Ø2.0_Plug ID Ø2.05_Plug OD Ø5
 <packageinstance name="69410X105102"/>
 </packageinstances>
 </package3d>
-<package3d name="69410X304002" urn="urn:adsk.eagle:package:3359599/1" type="box" library_version="2">
-<description>&lt;b&gt;694102304002&lt;/b&gt;&lt;p&gt;
-WR-DC_DC Power Jack_Right Angled_THT Center Pin Ø1.0_Plug ID Ø1.05_Plug OD Ø3.5_with Peg</description>
+<package3d name="69410X107102" urn="urn:adsk.eagle:package:3359601/1" type="box" library_version="2">
+<description>&lt;b&gt;694102107102&lt;/b&gt;&lt;p&gt;
+WR-DC_DC Power Jack_Right Angled_SMT Center Pin Ø1.0_Plug ID Ø1.05_Plug OD Ø3.5_with 4 Soldering Pad &amp; Peg</description>
 <packageinstances>
-<packageinstance name="69410X304002"/>
+<packageinstance name="69410X107102"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -1864,26 +1856,26 @@ Created 2014-10-08, Karrer Zheng&lt;br&gt;
 </device>
 </devices>
 </deviceset>
-<deviceset name="694103304002" urn="urn:adsk.eagle:component:3359614/1" prefix="J" uservalue="yes" library_version="2">
-<description>&lt;b&gt;WR-DC_DC Power Jack_Right Angled_THT Center Pin Ø1.3_Plug ID Ø1.35_Plug OD Ø3.5_with Peg
-;&lt;/b&gt;=&gt;Code : Con_WR-DC_THT_6941xx304002_694103304002
+<deviceset name="694103107102" urn="urn:adsk.eagle:component:3359616/1" prefix="J" uservalue="yes" library_version="2">
+<description>&lt;b&gt;WR-DC_DC Power Jack_Right Angled_SMT Center Pin Ø1.3_Plug ID Ø1.35_Plug OD Ø3.5_with 4 Soldering Pad &amp; Peg
+;&lt;/b&gt;=&gt;Code : Con_WR-DC_SMT_6941xx107102_694103107102
 &lt;p&gt;&lt;a href="http://katalog.we-online.de/media/images/v2/Family_Con_WR-DC_THT_6941xx304002_pf2.jpg"&gt;
 &lt;img src="http://katalog.we-online.de/media/images/v2/Family_Con_WR-DC_THT_6941xx304002_pf2.jpg" width="320"&gt;&lt;/a&gt;&lt;p&gt;
-Details see: &lt;a href="http://katalog.we-online.de/em/datasheet/6941xx304002.pdf"&gt;http://katalog.we-online.de/em/datasheet/6941xx304002.pdf&lt;/a&gt;&lt;p&gt;
+Details see: &lt;a href="http://katalog.we-online.de/em/datasheet/6941xx107102.pdf"&gt;http://katalog.we-online.de/em/datasheet/6941xx107102.pdf&lt;/a&gt;&lt;p&gt;
 Created 2014-10-08, Karrer Zheng&lt;br&gt;
 2014 (C) Wurth Elektronik</description>
 <gates>
 <gate name="G$1" symbol="DC_POWER_JACK" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="69410X304002">
+<device name="" package="69410X107102">
 <connects>
-<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="1" pad="1 A1"/>
 <connect gate="G$1" pin="2" pad="2"/>
 <connect gate="G$1" pin="3" pad="3"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:3359599/1"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:3359601/1"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
@@ -3023,9 +3015,9 @@ This footprint was designed to help hold the alignment of a through-hole compone
 <part name="R1" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="10KOHM" device="-0603-1/10W-1%" package3d_urn="urn:adsk.eagle:package:39650/1" value="10k"/>
 <part name="J1" library="Wurth_Elektronik_Electromechanic_DC_Power_Jack_Connectors_rev18b" library_urn="urn:adsk.eagle:library:438" deviceset="694106105102" device="" package3d_urn="urn:adsk.eagle:package:3359596/1"/>
 <part name="K1" library="pitam" deviceset="CPC1909J" device=""/>
-<part name="J2" library="Wurth_Elektronik_Electromechanic_DC_Power_Jack_Connectors_rev18b" library_urn="urn:adsk.eagle:library:438" deviceset="694103304002" device="" package3d_urn="urn:adsk.eagle:package:3359599/1"/>
 <part name="X1" library="con-coax" library_urn="urn:adsk.eagle:library:133" deviceset="BU-SMA-G" device="" package3d_urn="urn:adsk.eagle:package:6205/1"/>
 <part name="LCDCONN" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_10" device="&quot;" package3d_urn="urn:adsk.eagle:package:38157/1" value="ST7735R_cnn"/>
+<part name="LOADOUT" library="Wurth_Elektronik_Electromechanic_DC_Power_Jack_Connectors_rev18b" library_urn="urn:adsk.eagle:library:438" deviceset="694103107102" device="" package3d_urn="urn:adsk.eagle:package:3359601/1"/>
 </parts>
 <sheets>
 <sheet>
@@ -3045,10 +3037,6 @@ This footprint was designed to help hold the alignment of a through-hole compone
 <attribute name="VALUE" x="-25.4" y="7.62" size="1.778" layer="96"/>
 </instance>
 <instance part="K1" gate="G$1" x="162.56" y="-17.78" smashed="yes" rot="R270"/>
-<instance part="J2" gate="G$1" x="157.48" y="-43.18" smashed="yes" rot="R180">
-<attribute name="NAME" x="167.64" y="-45.72" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="167.64" y="-35.56" size="1.778" layer="96" rot="R180"/>
-</instance>
 <instance part="X1" gate="G1" x="-10.16" y="91.44" smashed="yes">
 <attribute name="VALUE" x="-12.7" y="86.36" size="1.778" layer="96"/>
 <attribute name="NAME" x="-12.7" y="94.742" size="1.778" layer="95"/>
@@ -3056,6 +3044,10 @@ This footprint was designed to help hold the alignment of a through-hole compone
 <instance part="LCDCONN" gate="G$1" x="78.74" y="137.16" smashed="yes" rot="R270">
 <attribute name="VALUE" x="56.134" y="137.16" size="1.778" layer="96" font="vector" rot="R270"/>
 <attribute name="NAME" x="86.868" y="137.16" size="1.778" layer="95" font="vector" rot="R270"/>
+</instance>
+<instance part="LOADOUT" gate="G$1" x="160.02" y="-43.18" smashed="yes" rot="R180">
+<attribute name="NAME" x="170.18" y="-45.72" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="170.18" y="-35.56" size="1.778" layer="96" rot="R180"/>
 </instance>
 </instances>
 <busses>
@@ -3114,12 +3106,12 @@ This footprint was designed to help hold the alignment of a through-hole compone
 </net>
 <net name="LOAD1" class="0">
 <segment>
-<pinref part="J2" gate="G$1" pin="1"/>
 <wire x1="144.78" y1="2.54" x2="144.78" y2="-43.18" width="0.1524" layer="91"/>
-<wire x1="144.78" y1="-43.18" x2="157.48" y2="-43.18" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="-43.18" x2="160.02" y2="-43.18" width="0.1524" layer="91"/>
 <label x="144.78" y="-30.48" size="1.778" layer="95"/>
 <pinref part="K1" gate="G$1" pin="2LD"/>
 <wire x1="144.78" y1="2.54" x2="149.86" y2="2.54" width="0.1524" layer="91"/>
+<pinref part="LOADOUT" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="LOAD_GND" class="0">
@@ -3130,7 +3122,6 @@ This footprint was designed to help hold the alignment of a through-hole compone
 <wire x1="-7.62" y1="-38.1" x2="-7.62" y2="10.16" width="0.1524" layer="91"/>
 <wire x1="-7.62" y1="66.04" x2="-7.62" y2="63.5" width="0.1524" layer="91"/>
 <junction x="-7.62" y="10.16"/>
-<pinref part="J2" gate="G$1" pin="2"/>
 <pinref part="J1" gate="G$1" pin="3"/>
 <wire x1="-7.62" y1="-38.1" x2="157.48" y2="-38.1" width="0.1524" layer="91"/>
 <wire x1="-15.24" y1="12.7" x2="-15.24" y2="10.16" width="0.1524" layer="91"/>
@@ -3139,8 +3130,11 @@ This footprint was designed to help hold the alignment of a through-hole compone
 <wire x1="10.16" y1="63.5" x2="-7.62" y2="63.5" width="0.1524" layer="91"/>
 <junction x="-7.62" y="63.5"/>
 <pinref part="ARDUINO_DUE1" gate="G$1" pin="GND@1"/>
-<pinref part="J2" gate="G$1" pin="3"/>
 <wire x1="157.48" y1="-40.64" x2="157.48" y2="-38.1" width="0.1524" layer="91"/>
+<pinref part="LOADOUT" gate="G$1" pin="3"/>
+<wire x1="157.48" y1="-40.64" x2="160.02" y2="-40.64" width="0.1524" layer="91"/>
+<pinref part="LOADOUT" gate="G$1" pin="2"/>
+<wire x1="160.02" y1="-38.1" x2="157.48" y2="-38.1" width="0.1524" layer="91"/>
 <junction x="157.48" y="-38.1"/>
 </segment>
 </net>

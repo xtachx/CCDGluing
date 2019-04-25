@@ -1648,6 +1648,30 @@ Warning: This is the KIT version of the AXIAL-0.3 package. This package has a sm
 </device>
 </devices>
 </deviceset>
+<deviceset name="150OHM" urn="urn:adsk.eagle:component:39692/1" prefix="R" library_version="1">
+<description>&lt;h3&gt;150Ω resistor&lt;/h3&gt;
+&lt;p&gt;A resistor is a passive two-terminal electrical component that implements electrical resistance as a circuit element. Resistors act to reduce current flow, and, at the same time, act to lower voltage levels within circuits. - Wikipedia&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="RESISTOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-0603-1/10W-1%" package="0603">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:39650/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="RES-11028"/>
+<attribute name="VALUE" value="150"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 <library name="Wurth_Elektronik_Electromechanic_DC_Power_Jack_Connectors_rev18b" urn="urn:adsk.eagle:library:438">
@@ -3018,6 +3042,7 @@ This footprint was designed to help hold the alignment of a through-hole compone
 <part name="X1" library="con-coax" library_urn="urn:adsk.eagle:library:133" deviceset="BU-SMA-G" device="" package3d_urn="urn:adsk.eagle:package:6205/1"/>
 <part name="LCDCONN" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_10" device="&quot;" package3d_urn="urn:adsk.eagle:package:38157/1" value="ST7735R_cnn"/>
 <part name="LOADOUT" library="Wurth_Elektronik_Electromechanic_DC_Power_Jack_Connectors_rev18b" library_urn="urn:adsk.eagle:library:438" deviceset="694103107102" device="" package3d_urn="urn:adsk.eagle:package:3359601/1"/>
+<part name="R_CLIMIT" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="150OHM" device="-0603-1/10W-1%" package3d_urn="urn:adsk.eagle:package:39650/1" value="150"/>
 </parts>
 <sheets>
 <sheet>
@@ -3048,6 +3073,10 @@ This footprint was designed to help hold the alignment of a through-hole compone
 <instance part="LOADOUT" gate="G$1" x="160.02" y="-43.18" smashed="yes" rot="R180">
 <attribute name="NAME" x="170.18" y="-45.72" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="170.18" y="-35.56" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="R_CLIMIT" gate="G$1" x="139.7" y="20.32" smashed="yes" rot="R90">
+<attribute name="NAME" x="138.176" y="20.32" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="141.224" y="20.32" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
 </instance>
 </instances>
 <busses>
@@ -3204,14 +3233,15 @@ This footprint was designed to help hold the alignment of a through-hole compone
 <segment>
 <pinref part="LCDCONN" gate="G$1" pin="10"/>
 <wire x1="83.82" y1="127" x2="137.16" y2="127" width="0.1524" layer="91"/>
-<pinref part="K1" gate="G$1" pin="3CTR-"/>
 <pinref part="ARDUINO_DUE1" gate="G$1" pin="GND@4"/>
-<wire x1="149.86" y1="-7.62" x2="137.16" y2="-7.62" width="0.1524" layer="91"/>
-<wire x1="137.16" y1="-7.62" x2="137.16" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="137.16" y1="73.66" x2="129.54" y2="73.66" width="0.1524" layer="91"/>
 <label x="132.08" y="73.66" size="1.778" layer="95"/>
 <wire x1="137.16" y1="127" x2="137.16" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="73.66" x2="137.16" y2="30.48" width="0.1524" layer="91"/>
 <junction x="137.16" y="73.66"/>
+<wire x1="137.16" y1="30.48" x2="139.7" y2="30.48" width="0.1524" layer="91"/>
+<pinref part="R_CLIMIT" gate="G$1" pin="2"/>
+<wire x1="139.7" y1="30.48" x2="139.7" y2="25.4" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="3.3V" class="0">
@@ -3235,6 +3265,14 @@ This footprint was designed to help hold the alignment of a through-hole compone
 <label x="22.86" y="111.76" size="1.778" layer="95"/>
 <wire x1="81.28" y1="121.92" x2="60.96" y2="121.92" width="0.1524" layer="91"/>
 <junction x="60.96" y="121.92"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="K1" gate="G$1" pin="3CTR-"/>
+<wire x1="149.86" y1="-7.62" x2="139.7" y2="-7.62" width="0.1524" layer="91"/>
+<pinref part="R_CLIMIT" gate="G$1" pin="1"/>
+<wire x1="139.7" y1="-7.62" x2="139.7" y2="15.24" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
