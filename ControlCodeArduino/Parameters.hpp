@@ -16,8 +16,8 @@
 #define TargetTemperature 80.0
 
 /*SM variables and memory*/
-#define KpA 0.2
-#define KiA 5
+#define KpA 0.05
+#define KiA 20
 #define KdA 1
 
 #define KpR 0.2

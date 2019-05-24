@@ -38,8 +38,8 @@ HeatControlSM::HeatControlSM(void){
     /*The two PID implementations*/
     this->AbsPID = new PID(&CurrentTemperature, &TOutput, &SetTemperature, KpA, KiA, KdA, P_ON_M, DIRECT);
     this->RatePID = new PID(&TempratureRateMovingAvg, &ROutput, &RSetpoint, KpR, KiR, KdR, P_ON_M, DIRECT);
-    this->AbsPID->SetOutputLimits(0,255);
-    this->RatePID->SetOutputLimits(0,255);
+    this->AbsPID->SetOutputLimits(0,100);
+    this->RatePID->SetOutputLimits(0,100);
 
 }
 
@@ -100,9 +100,12 @@ void HeatControlSM::StateDecision(void ){
     if (this->CurrentTemperature > 90 && this->SetTemperature <90)
         this->ShouldBeFSMState=ST_Idle; //this should never happen in practice. If it does, then idle.
 
-    /*Warmup State conditions*/
+    /*Warmup State conditions - while not in MaintainWarm*/
     if (this->SetTemperature > this->CurrentTemperature + 2 &&
-        this->CurrentTemperature < 90) this->ShouldBeFSMState=ST_Warmup;
+        this->CurrentTemperature < 90 && this->CurrentFSMState != ST_MaintainWarm) this->ShouldBeFSMState=ST_Warmup;
+    /*Warmup while in maintainwarm*/
+    if (this->SetTemperature > this->CurrentTemperature + 10 &&
+        this->CurrentTemperature < 90 && this->CurrentFSMState == ST_MaintainWarm) this->ShouldBeFSMState=ST_Warmup;
 
 
     /*Cooldown while the current temperature is low - i.e. <220 K*/
@@ -111,7 +114,7 @@ void HeatControlSM::StateDecision(void ){
 
     /*Maintain a warm state once the temperature is within 2 K of set point*/
     if (this->SetTemperature > 50  &&
-        fabs(this->SetTemperature - this->CurrentTemperature) <= 2)
+        fabs(this->SetTemperature - this->CurrentTemperature) <= 2 && this->CurrentFSMState != ST_MaintainWarm)
         this->ShouldBeFSMState=ST_MaintainWarm;
 
 
