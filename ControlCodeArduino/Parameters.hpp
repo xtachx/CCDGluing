@@ -11,13 +11,13 @@
 
 
 #define RateMovingAvgN 20
-#define MovingAvgN 5
+#define MovingAvgN 15
 #define DeltaTRatePerMin 3.0
 #define TargetTemperature 80.0
 
 /*SM variables and memory*/
-#define KpA 0.05
-#define KiA 20
+#define KpA 0.1
+#define KiA 5
 #define KdA 1
 
 #define KpR 0.2
